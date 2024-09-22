@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let fromCurrency = 'USD';
     let toCurrency = "EUR";
 
-    fetch('https://api.exchangeratesapi.io/latest?base=' + fromCurrency)
+    fetch(`https://api.exchangeratesapi.io/latest?base= ${fromCurrency}`)
         .then(response => response.json(),)
         .then(data => {
 
